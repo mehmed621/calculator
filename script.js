@@ -12,10 +12,9 @@ let topDisplayer = document.querySelector("#top-displayer");
 let bottomDisplayer = document.querySelector("#bottom-displayer");
 
 const numbers = document.querySelectorAll(".numbers");
-const numbersArr = Array.from(numbers);
-for (let i = 0; i < numbersArr.length; i++) {
-  numbersArr[i].addEventListener("click", function () {
-    bottomDisplayer.innerText += Number(numbersArr[i].innerText);
+for (let i = 0; i < numbers.length; i++) {
+  numbers[i].addEventListener("click", function () {
+    bottomDisplayer.innerText += Number(numbers[i].innerText);
   });
 }
 
