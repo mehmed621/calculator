@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+}
+
+body {
+  background-color: rgb(233, 214, 189);
+}
+
+h1{
+  text-align: center;
+  margin: 15px 0 25px 0;
+}
+
+#bottom-displayer {
+  height: 24px;
+}
+
+#bottom-displayer {
+  height: 46px;
+}
+
+#grid-container {
+  background-color: rgb(153, 175, 216);
+  width: 50%;
+  margin: auto;
+  height: 500px;
+  border-radius: 8px;
+  box-sizing: content-box;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 5px;
+  grid-auto-rows: minmax(40px, auto);
+  padding: 10px;
+}
+
+.displayer {
+  background-color: white;
+  grid-column: 1 / 6;
+}
+
+#d1 {
+  height: 40px;
+  padding-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  font-size: 18px;
+}
+
+#d2 {
+  height: 65%;
+  padding-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  font-size: 34px;
+}
+
+button {
+  text-align: center;
+  border: none;
+  font-weight: 600;
+  padding: 5px 25px;
+  width: 100%;
+  height: 100%;
+  font-size: 30px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(181, 241, 241);
+}
+
+.clear button:hover {
+  background-color: rgba(224, 67, 67, 0.8);
+}
+
+.equals button:hover {
+  background-color: rgba(75, 181, 67, 0.8);
+}
+
+.clear {
+  grid-column: 5 / 6;
+  grid-row: 3 / 4;
+}
+
+.equals {
+  grid-column: 5 / 6;
+  grid-row: 4 / 6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a{
+  text-decoration: none;
+}
+
+footer{
+  padding: 20px 15px 5px 15px;
+  display: flex;
+  justify-content: space-between;
+}
